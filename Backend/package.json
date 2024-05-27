@@ -1,0 +1,20 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "this is a backend package dependancy file",
+  "main": "server/serverApi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon serverApi.js"
+  },
+  "author": "Darshan Bhandary",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "body-parser": "^1.20.2",
+    "cros": "^1.0.1",
+    "express": "^4.19.2",
+    "moongose": "^1.0.0",
+    "nodemon": "^3.1.1"
+  }
+}
