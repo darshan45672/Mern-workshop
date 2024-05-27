@@ -1,9 +1,10 @@
-const MONGO_URI = '';
-import { connect } from 'mongoose';
+/* eslint-disable no-undef */
+const MONGO_URI = 'mongodb+srv://darshan123:darshan123@cluster0.rwz1zva.mongodb.net/';
+const mongoose = require('mongoose');
 
 const connectDB = async () => {
     try {
-        await connect(MONGO_URI);
+        await mongoose.connect(MONGO_URI); 
         console.log('MongoDB connection SUCCESS');
     } catch (error) {
         console.log('MongoDB connection FAIL');
