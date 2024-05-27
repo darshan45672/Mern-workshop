@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-const MONGO_URI = 'mongodb+srv://darshan123:darshan123@cluster0.rwz1zva.mongodb.net/';
+const MONGO_URI = 'mongodb+srv://darshan123:darshan123@cluster0.rwz1zva.mongodb.net/blogDB?retryWrites=true&w=majority';
 const mongoose = require('mongoose');
 
 const connectDB = async () => {

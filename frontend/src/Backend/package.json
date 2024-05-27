@@ -4,7 +4,7 @@
   "description": "this is backend package dependency file",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon serverApi.js"
   },
   "author": "darshan bhandary",
   "license": "ISC",
