@@ -1,4 +1,4 @@
-
+const dotenv = require('dotenv').config();
 const express = require('express');
 const app = express();
 const cors = require('cors');
@@ -15,7 +15,11 @@ const connectDB = require('../connection/connection');
 connectDB();
 const blogPost = require('../schema/blogPostSchema');
 
-const port = 3001;
+// console.log(dotenv.parsed);
+
+const port = process.env.PORT || 3001;
+
+// console.log(port);
 
 app.post('/insert', async (req, res) => {
     const { title, content, author } = req.body;
@@ -49,6 +53,7 @@ app.post('/insert', async (req, res) => {
     });
   });
 
+  
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });

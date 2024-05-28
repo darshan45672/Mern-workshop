@@ -1,5 +1,8 @@
+const dotenv = require('dotenv').config();
 
-const MONGO_URI = 'mongodb+srv://darshan123:darshan123@cluster0.rwz1zva.mongodb.net/blogDB?retryWrites=true&w=majority';
+const MONGO_URI = process.env.MONGODB_URI;
+// console.log(MONGO_URI);
+
 const mongoose = require('mongoose');
 
 const connectDB = async () => {
