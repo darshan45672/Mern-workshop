@@ -2,10 +2,10 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "this is a backend package dependancy file",
-  "main": "server/serverApi.js",
+  "main": "server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon serverApi.js"
+    "dev": "nodemon server.js"
   },
   "author": "Darshan Bhandary",
   "license": "ISC",
